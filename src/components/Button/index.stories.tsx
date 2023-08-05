@@ -58,6 +58,9 @@ export const Variants: React.FC = () => {
         <Button fullWidth>Full size</Button>
       </Row>
       <Row>
+        <Button squared>Square Button</Button>
+      </Row>
+      <Row>
         <Button isLoading endIcon={<AutoRenewIcon spin color="currentColor" />}>
           Approving
         </Button>
