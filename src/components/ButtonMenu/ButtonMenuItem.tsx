@@ -30,6 +30,7 @@ const ButtonMenuItem: React.FC<ButtonMenuItemProps> = ({
         forwardedAs={as}
         size={size}
         variant="tertiary"
+        squared
         colorKey={variant === variants.PRIMARY ? "primary" : "textSubtle"}
         {...props}
       />

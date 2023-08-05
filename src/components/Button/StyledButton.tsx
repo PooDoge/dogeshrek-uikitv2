@@ -71,6 +71,7 @@ const StyledButton = styled.button<ButtonProps>`
   &:hover:not(:disabled):not(.button--disabled):not(:active) {
     background-color: ${getButtonVariantProp("backgroundHover")};
     border-color: ${getButtonVariantProp("borderColorHover")};
+    border-radius: ${({ squared }) => (squared ? "0px" : "16px")};
   }
 
   &:focus:not(:active) {
