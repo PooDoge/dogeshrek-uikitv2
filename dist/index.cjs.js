@@ -1778,9 +1778,9 @@ var Modal = function (_a) {
 };
 var templateObject_1$u, templateObject_2$9, templateObject_3$5;
 
-var Overlay = styled__default['default'].div.attrs({ role: "presentation" })(templateObject_1$v || (templateObject_1$v = __makeTemplateObject(["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: #452a7a;\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"], ["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: #452a7a;\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"])), function (_a) {
+var Overlay = styled__default['default'].div.attrs({ role: "presentation" })(templateObject_1$v || (templateObject_1$v = __makeTemplateObject(["\n  &:before {\n    background-attachment: fixed;\n    transition: opacity 1s;\n  }\n  &:before {\n    background-color: rgba(0,0,0,0.5);  \n    transition: opacity 1s;\n  }\n  &:before {\n    background-color: rgba(0,0,0,0.5);  \n    transition: opacity 1s;\n  }\n  &:before {\n    background: inherit;\n    transition: opacity 1s;\n  }\n  transition: opacity 1s;\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  backdrop-filter: blur(20px);\n  -webkit-backdrop-filter: blur(20px);\n  background: inherit;\n  background-color: rgba(0,0,0,0.6);  \n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"], ["\n  &:before {\n    background-attachment: fixed;\n    transition: opacity 1s;\n  }\n  &:before {\n    background-color: rgba(0,0,0,0.5);  \n    transition: opacity 1s;\n  }\n  &:before {\n    background-color: rgba(0,0,0,0.5);  \n    transition: opacity 1s;\n  }\n  &:before {\n    background: inherit;\n    transition: opacity 1s;\n  }\n  transition: opacity 1s;\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  backdrop-filter: blur(20px);\n  -webkit-backdrop-filter: blur(20px);\n  background: inherit;\n  background-color: rgba(0,0,0,0.6);  \n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"])), function (_a) {
     var show = _a.show;
-    return (show ? 0.6 : 0);
+    return (show ? 0.9 : 0);
 }, function (_a) {
     var zIndex = _a.zIndex;
     return zIndex;
@@ -2595,7 +2595,7 @@ var AccountModal = function (_a) {
     return (React__default['default'].createElement(Modal, { title: "Your wallet", onDismiss: onDismiss },
         React__default['default'].createElement(Text, { fontSize: "20px", bold: true, style: { whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", marginBottom: "8px" } }, account),
         React__default['default'].createElement(Flex, { mb: "32px" },
-            React__default['default'].createElement(LinkExternal, { small: true, href: "https://bscscan.com/address/" + account, mr: "16px" }, "View on BscScan"),
+            React__default['default'].createElement(LinkExternal, { small: true, href: "https://explorer.dogechain.dog/address/" + account, mr: "16px" }, "View on Explorer"),
             React__default['default'].createElement(CopyToClipboard, { toCopy: account }, "Copy Address")),
         React__default['default'].createElement(Flex, { justifyContent: "center" },
             React__default['default'].createElement(Button, { size: "sm", variant: "secondary", onClick: function () {
